@@ -8,19 +8,19 @@ hcs bootcamp starter code
 
 2. In AWS create an iam user (download cvs to save secrets to your computer. chalice will use this later)
 
-![Alt text](https://github.com/anovis/hcs-bootcamp-2018/blob/master/images/adduser.png)
+![Alt text](/images/adduser.PNG)
 
-![Alt text](/images/secrets.png)
+![Alt text](/images/secrets.PNG)
 
 3. In AWS create an s3 bucket (make public)
 
-![Alt text](/images/createbucket.png)
+![Alt text](/images/createbucket.PNG)
 
 4. In AWS click bucket and go to `properties` and select static webhosting and click `enable` and set index to `index.html`
 
-![Alt text](/images/webhosting.png)
+![Alt text](/images/webhosting.PNG)
 
-4. In AWS create new bucket policy (in permissions tab which is next to properties) and add text below (add your bucket name)
+5. In AWS create new bucket policy (in permissions tab which is next to properties) and add text below (add your bucket name)
 
 `{
     "Version":"2012-10-17",
@@ -35,23 +35,23 @@ hcs bootcamp starter code
     ]
   }`
 
-5. Copy all **contents** from `aws-frontend` to that s3 bucket including static folder (make public visible when prompted)
+6. Copy all **contents** from `aws-frontend` to that s3 bucket including static folder (make public visible when prompted)
 
-6. Test to see if working. Go to address which can be found when you enabled webhosting. It should look like the below image
+7. Test to see if working. Go to address which can be found when you enabled webhosting. It should look like the below image
 
-![Alt text](/images/base.png)
+![Alt text](/images/base.PNG)
 
-6. Install Python 3 (suggest using anaconda3)
+8. Install Python 3 (suggest using anaconda3)
 
-3. run `pip install -r requirements.txt` this will install python packages that you need
+9. run `pip install -r requirements.txt` this will install python packages that you need
 
-4. run `aws configure` and when prompted add your secrets you made earlier
+10. run `aws configure` and when prompted add your secrets you made earlier
 
-5. run `chalice new-project hcsbootcamp`
+11. run `chalice new-project hcsbootcamp`
 
-6. `cd` into `hcebootcamp` directory and replace app.py with the app.py from this repo
+12. `cd` into `hcebootcamp` directory and replace app.py with the app.py from this repo
 
-7. fill in api endpoints in app.py to complete bootcamp
+13. fill in api endpoints in app.py to complete bootcamp
 
 
 ## NOTES
@@ -62,10 +62,6 @@ hcs bootcamp starter code
 
 3. To have the frontend hit your new api get the api endpoint created from chalice deploy. Find and replace **CHALICE_API_ENDPOINT** in `index.html` and reupload to s3 and you should
 have a fully running and serverless website!
-
-
-
-
 
 
 * Final Product should look like this
