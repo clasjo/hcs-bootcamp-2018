@@ -66,4 +66,4 @@ have a fully running and serverless website!
 
 * Final Product should look like this
 
-![Alt text](/images/main.png)
+![Alt text](/images/main.PNG)
