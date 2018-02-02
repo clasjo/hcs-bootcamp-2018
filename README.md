@@ -8,7 +8,7 @@ hcs bootcamp starter code
 
 2. In AWS create an iam user (download cvs to save secrets to your computer. chalice will use this later)
 
-![Alt text](/images/adduser.png)
+![Alt text](https://github.com/anovis/hcs-bootcamp-2018/blob/master/images/adduser.png)
 
 ![Alt text](/images/secrets.png)
 
