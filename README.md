@@ -6,7 +6,7 @@ hcs bootcamp starter code
 
 1. Get AWS Acount (eligible for free tier for 1 year and only pay for what you use) 
 
-2. In AWS create an iam user (download cvs to save secrets to your computer. chalice will use this later)
+2. In AWS create an iam user (download csv to save secrets to your computer. chalice will use this later)
 
 ![Alt text](/images/adduser.PNG)
 
@@ -51,7 +51,7 @@ hcs bootcamp starter code
 
 12. run `chalice new-project hcsbootcamp`
 
-13. `cd` into `hcebootcamp` directory and replace app.py with the app.py from this repo
+13. `cd` into `hcsbootcamp` directory and replace app.py with the app.py from this repo
 
 14. fill in api endpoints in app.py to complete bootcamp
 
