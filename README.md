@@ -41,17 +41,19 @@ hcs bootcamp starter code
 
 ![Alt text](/images/base.PNG)
 
-8. Install Python 3 (suggest using anaconda3)
+8. Go to `http://api.reimaginebanking.com/` and use your github login to sign in. This is where you will get the `api-id` used later in `app.py`. also make sure to create a `customer` and at least 2 checking or saving accounts. You can do this using the web interface
 
-9. run `pip install -r requirements.txt` this will install python packages that you need
+9. Install Python 3 (suggest using anaconda3)
 
-10. run `aws configure` and when prompted add your secrets you made earlier
+10. run `pip install -r requirements.txt` this will install python packages that you need
 
-11. run `chalice new-project hcsbootcamp`
+11. run `aws configure` and when prompted add your secrets you made earlier
 
-12. `cd` into `hcebootcamp` directory and replace app.py with the app.py from this repo
+12. run `chalice new-project hcsbootcamp`
 
-13. fill in api endpoints in app.py to complete bootcamp
+13. `cd` into `hcebootcamp` directory and replace app.py with the app.py from this repo
+
+14. fill in api endpoints in app.py to complete bootcamp
 
 
 ## NOTES
