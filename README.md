@@ -41,7 +41,12 @@ hcs bootcamp starter code
 
 ![Alt text](/images/base.PNG)
 
-8. Go to `http://api.reimaginebanking.com/` and use your github login to sign in. This is where you will get the `api-id` used later in `app.py`. also make sure to create a `customer` and at least 2 checking or saving accounts. You can do this using the web interface
+8. Go to `http://api.reimaginebanking.com/` and use your github login to sign in. This is where you will get the `api-id` used later in `app.py`. also make sure to create a `customer` and at least 2 checking or saving accounts. You can do this using the web interface 
+
+* if this website is down then you can manually create account and transfer tables in dynamodb in aws. This is eligible for the free tier. Go to dynamodb and create an accounts table and a transfer table. The columns you need are shown in the pictures below. For account you need to have id,_id,nickname, balance and for transfer you need id,amount,payee_id,payer_id,status
+
+![Alt text](/images/acountd.PNG)
+![Alt text](/images/transferd.PNG)
 
 9. Install Python 3 (suggest using anaconda3)
 
