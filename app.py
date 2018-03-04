@@ -15,15 +15,27 @@ and add them as lists to the transfers and account variables.
 ############
 @app.route('/data', cors=True)
 def index():
+    ###if using Nessie
+    """
     # create the URL for the request
     accountsUrl = 'http://api.reimaginebanking.com/accounts?key={}'.format(apiKey)
 
     # make call to the Nessie Accounts endpoint
     accountsResponse = requests.get(accountsUrl)
-
-    if accountsResponse.status_code == 200:
-
-
+    """
+     ### if using dynamo
+    """
+    DYNAMO = boto3.client('dynamodb')
+    DYNAMO_TABLE_accounts = "accounts"
+    DYNAMO_TABLE_transfers = "transfers"
+     # make call to the dynamo endpoints
+    response = DYNAMO.scan(TableName=DYNAMO_TABLE_accounts)
+    accounts = response['Items']
+    response = DYNAMO.scan(TableName=DYNAMO_TABLE_transfers)
+    transfers = response['Items']
+    """
+  
+    if accounts:
         return {"data":{"transfers":transfers,"accounts":accounts}}
     else:
         return {"data":{"transfers":[], "accounts":[]}}
