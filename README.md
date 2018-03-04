@@ -47,13 +47,13 @@ hcs bootcamp starter code
 
 10. run `pip install -r requirements.txt` this will install python packages that you need
 
-11. run `aws configure` and when prompted add your secrets you made earlier
+11. run `aws configure` and when prompted add your secrets you made earlier in step 2 
 
 12. run `chalice new-project hcsbootcamp`
 
 13. `cd` into `hcsbootcamp` directory and replace app.py with the app.py from this repo
 
-14. fill in api endpoints in app.py to complete bootcamp
+14. fill in api endpoints in app.py to complete bootcamp. 
 
 
 ## NOTES
